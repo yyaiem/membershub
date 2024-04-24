@@ -118,11 +118,11 @@ body {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2dvh;
-    margin: 20px;
+    /* margin: 20px; */
     text-decoration: none;
 }
 
-.link_sec{
+.link_sec {
     background-color: rgba(255, 255, 255, 0.147);
     border-radius: 10px;
     margin: 10px;
@@ -185,6 +185,7 @@ footer {
         background-color: rgb(125, 52, 21);
 
     }
+
     body {
         background-color: rgba(255, 255, 255, 0.124);
         margin: 8px;
@@ -280,7 +281,7 @@ footer {
         background-color: rgba(255, 255, 255, 0.097);
         border-radius: 10px;
     }
-    
+
     .about_head {
         color: aliceblue;
         font-weight: bold;
@@ -288,7 +289,7 @@ footer {
         font-size: 4dvw;
         margin-bottom: 8px;
     }
-    
+
     .about_text {
         color: white;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -317,12 +318,12 @@ footer {
         border-radius: 10px;
         cursor: none;
     }
-    
+
     .footer_items {
         font-size: 8px;
         margin-right: 8px;
         margin-left: 4px;
     }
-    
+
 
 }
