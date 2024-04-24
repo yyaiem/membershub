@@ -7,6 +7,36 @@
     <title>YantraYodha AIEM - Members Hub</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./site_files/favicon.ico" type="image/x-icon">
+
+    <!-- alert style -->
+    <style>
+        .alert {
+            padding: 20px;
+            background-color: rgb(255, 0, 0);
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 600;
+        }
+
+        .closebtn {
+            margin-left: 15px;
+            color: white;
+            font-weight: bold;
+            float: right;
+            font-size: 22px;
+            line-height: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        @media only screen and (max-width: 960px) {
+        .alert{
+            margin: 8px;
+            padding: 8px;
+        }}
+    </style>
 </head>
 
 <body>
@@ -28,6 +58,13 @@
 
 
         <main>
+            <!-- alert message -->
+            <div class="alert ">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                <strong>Alert!! for Heat Wave:</strong> Drink plenty of water throughout the day to stay hydrated and
+                Stay indoors during peak heat hours.
+            </div>
+
             <div class="site_head  ">
 
                 <div class="intro">
@@ -39,8 +76,7 @@
             </div>
 
             <div class="join_us">
-                <a class="join_us_btn"
-                    href="https://yyaiem.github.io/member_registration/">
+                <a class="join_us_btn" href="https://yyaiem.github.io/member_registration/">
                     Join Us </a>
             </div>
 
