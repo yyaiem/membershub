@@ -39,6 +39,29 @@
             }
         }
     </style>
+    
+    <script>
+        const googleAppsScriptURL = 'https://script.google.com/macros/s/AKfycbw__R_BDgzpCiYG-VYk7S56nmD0T7ua5HB1G_b2OfsGM3BJFiSiUeoUOny7CjeVfGYcaA/exec';
+
+        async function fetchData() {
+            try {
+                const response = await fetch(googleAppsScriptURL);
+                if (!response.ok) {
+                    throw new Error('HTTP error! Status: ${ response.status } ');
+                }
+
+                const data = await response.json(); // Assuming the Apps Script returns JSON
+                document.getElementById('grp_mem_count').innerText = JSON.stringify(data, null, 2)+" Community Members";
+                console.log(JSON.stringify(data, null, 2))
+            } catch (error) {
+                console.error('Error fetching data:', error);
+                document.getElementById('grp_mem_count').innerText = 'Error loading data.';
+            }
+        }
+
+        // Call the fetch function on page load
+        fetchData();
+    </script>
 </head>
 
 <body>
@@ -73,7 +96,7 @@
                     <h1 class="home_head_text">
                         YantraYodha Club - Abacus Institute of Engineering and Management (Members Hub)
                     </h1>
-                    <p class="group_member_amount">36 Group Members</p>
+                    <p class="group_member_amount" id="grp_mem_count">Calculating Community Members...</p>
                 </div>
             </div>
 
